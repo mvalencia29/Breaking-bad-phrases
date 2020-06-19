@@ -55,7 +55,7 @@ function App() {
   return (
     <Fragment>
       <ContainerFrase>
-        <Frase>{quote}</Frase>
+        <Frase>{quote !== '' ? `"${quote}"` : null}</Frase>
         <EscritoPor>{autor !== "" ? `- ${autor}` : null}</EscritoPor>
       </ContainerFrase>
       <ContainerButton>
